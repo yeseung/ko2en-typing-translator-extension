@@ -17,7 +17,7 @@
         <tr>
             <th>문장 입력</th>
             <td>
-                <textarea id="txtSource" rows="4" cols="60" onKeyUp="doConvert();"></textarea>
+                <textarea id="txtSource" rows="4" cols="60"></textarea>
             </td>
             <td>
                 <button id="clearText">비우기</button>
@@ -25,9 +25,9 @@
         </tr>
         <tr>
             <td colspan="3" style="text-align: center">
-                <input type="radio" id="optEtoH" name="Mode" checked="checked" onClick="doConvert();">
+                <input type="radio" id="optEtoH" name="Mode" checked="checked">
                 <label for="optEtoH">영타 → 한글</label>
-                <input type="radio" id="optHtoE" name="Mode" onClick="doConvert();">
+                <input type="radio" id="optHtoE" name="Mode">
                 <label for="optHtoE">한타 → 영문</label>
             </td>
         </tr>
