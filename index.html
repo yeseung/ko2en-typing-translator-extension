@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>한/영타 변환기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="width: 640px">
+<div class="container">
+
+    <p>한글로 잘못 입력한 영문을 고칠 것인지, 영어로 잘못 입력한 한글을 고칠 것인지 선택한 후,<br>글을 입력하면 자동으로 변환됩니다.</p>
+
+    <table class="wiki">
+        <tr>
+            <th>문장 입력</th>
+            <td>
+                <textarea id="txtSource" rows="4" cols="60" onKeyUp="doConvert();"></textarea>
+            </td>
+            <td>
+                <button id="clearText">비우기</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center">
+                <input type="radio" id="optEtoH" name="Mode" checked="checked" onClick="doConvert();">
+                <label for="optEtoH">영타 → 한글</label>
+                <input type="radio" id="optHtoE" name="Mode" onClick="doConvert();">
+                <label for="optHtoE">한타 → 영문</label>
+            </td>
+        </tr>
+        <tr>
+            <th>변환 결과</th>
+            <td>
+                <textarea id="txtConv" rows="4" cols="60" readonly="readonly"></textarea>
+            </td>
+            <td>
+                <button id="copyResult">복사</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="footer">
+    [광고]&nbsp;&nbsp;<a href="https://xn--4k0b139bupg.kr" target="_blank" rel="noreferrer">추억 속 타자 연습, 다시 시작해볼까요? - https://김타자.kr</a>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
